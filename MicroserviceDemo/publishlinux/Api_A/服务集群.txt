@@ -1,0 +1,12 @@
+
+
+1、构建镜像
+docker build -t myapi_a .  #需要当前目录
+
+docker run -itd -p 5726:80 myapi_a
+
+
+
+docker-compose up
+
+

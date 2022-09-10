@@ -1,0 +1,37 @@
+﻿[
+  {
+    "Name": "花呗",
+    "TotalQuota": 6000.0,
+    "UsedQuota": 2468.30,
+    "SurplusQuota": 3531.70,
+    "StatementDate": 9
+  },
+  {
+    "Name": "交行",
+    "TotalQuota": 11000.0,
+    "UsedQuota": 155.50,
+    "SurplusQuota": 10844.50,
+    "StatementDate": 14
+  },
+  {
+    "Name": "上海",
+    "TotalQuota": 17000.0,
+    "UsedQuota": 1976.69,
+    "SurplusQuota": 15023.31,
+    "StatementDate": 5
+  },
+  {
+    "Name": "广州",
+    "TotalQuota": 12000.0,
+    "UsedQuota": 1957.27,
+    "SurplusQuota": 10042.73,
+    "StatementDate": 25
+  },
+  {
+    "Name": "总",
+    "TotalQuota": 46000.0,
+    "UsedQuota": 6557.76,
+    "SurplusQuota": 39442.24,
+    "StatementDate": 0
+  }
+]

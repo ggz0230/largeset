@@ -1,0 +1,1 @@
+print.__lt__("fdfg");

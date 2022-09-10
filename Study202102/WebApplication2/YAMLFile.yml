@@ -1,0 +1,36 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-demo-deployment
+  labels:
+    k8s-app: k8s-demo-web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      k8s-app: k8s-demo-web
+  template:
+    metadata:
+      labels:
+        k8s-app: k8s-demo-web
+    spec:
+      containers:
+      - name: k8s-demo
+        image: myapi_a
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5000
+---
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    k8s-app: k8s-demo-web
+  name: k8s-demo-service
+spec:
+  type: NodePort
+  ports:
+  - port: 5000
+    targetPort: 5000
+  selector:
+    k8s-app: k8s-demo-web

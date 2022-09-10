@@ -1,0 +1,6 @@
+
+
+停止并删除全部容器 docker stop $(docker ps -q) & docker rm $(docker ps -aq)
+
+删除镜像 docker rmi 镜像id
+

@@ -1,0 +1,10 @@
+﻿
+
+1、搭建consul集群
+执行 docker-compose up -d 启动，而后访问 8500 8501 8502  https://www.shangmayuan.com/a/aa0ceccae0104f42893e17f5.html 
+
+
+2、启动nginx负载均衡
+docker run -d -p 8086:80 -v /web/Api_A/web/consulnginx/:/var/log/nginx/ -v /web/Api_A/web/consulnginx/nginx.conf:/etc/nginx/nginx.conf --name consulnginx nginx
+
+
